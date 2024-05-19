@@ -1,0 +1,9 @@
+.narrow-row {
+    height: 20px; /* Примерно вдвое меньше стандартной высоты строки */
+}
+
+.narrow-row td {
+    padding: 4px 8px; /* Уменьшенные отступы */
+}
+
+.components-table-demo-size h4 { margin-bottom: 8px; }
