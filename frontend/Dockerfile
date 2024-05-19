@@ -1,5 +1,5 @@
 # Используем образ Node.js для сборки
-FROM node:18 AS build
+FROM node:20 AS build
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
