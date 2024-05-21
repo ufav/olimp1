@@ -14,7 +14,7 @@ RUN npm run build
 
 # Используем Nginx для сервировки статики
 FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app /usr/share/nginx/html
 
 # Копируем Nginx конфиг файл
 COPY nginx.conf /etc/nginx/conf.d/default.conf
