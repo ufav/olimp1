@@ -12,7 +12,7 @@ const BettingResultsTabs = () => {
     const fetchData = async () => {
         try {
             setLoading(true);
-            const response = await axios.get('http://127.0.0.1:8000/betting_results');
+            const response = await axios.get('http://backend:8000/betting_results');
             setSportData(response.data.reduce((acc, item) => {
                 const { sport_name, ...rest } = item;
                 if (!acc[sport_name]) {
